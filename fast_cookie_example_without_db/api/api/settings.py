@@ -21,6 +21,9 @@ class Settings(BaseSettings):
     cors_allow_methods: Optional[List[str]]
     cors_allow_headers: Optional[List[str]]
 
+    todos_route: str = "/todos"
+    todos_tag: str = "Todos"
+
     class Config:
         env_file = SETTINGS_FILE_PATH
 
